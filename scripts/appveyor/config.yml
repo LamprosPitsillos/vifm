@@ -9,6 +9,8 @@ environment:
         - BUILDENV: nix
           CC: ccache gcc
           COLLECT_COVERAGE: yes
+          APPVEYOR_CACHE_SKIP_RESTORE: true
+          APPVEYOR_CACHE_SKIP_SAVE: true
           APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
         - BUILDENV: nix
           CC: clang
